@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* general styles */
+body {
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ 
+/* desktop styles */
+#main-content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  
+}
+/* hero bg image */
+#hero {
+    background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+    background-size: cover;
+    height: 600px;
+     
+}
+/* header */
+#header {
+    padding: 5rem 0;
+}
+/* nav */
+.main-nav {
+    
+    background: #707070;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+     
+}
+/* hamburger-menu */
+.main-nav .hamburger-menu {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    cursor: pointer;
+    display: none;
+}
+.main-nav .hamburger-line {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 0.4rem;
+     
+}
+.main-nav ul {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+}
+
+.main-nav ul li {
+    border-left: 1px solid #707070;
+    padding: 0.6rem 0;
+    width: 100%;
+    text-align: center;
+}
+.main-nav ul li:first-child {
+    border-left: none;
+}
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+.main-nav li:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+.input-container {
+    display: flex;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .45);
+    padding: 0.3rem 0;
+    padding-left: 0.4rem;
+    
+}
+.input-container input {
+    background-color: transparent;
+    border: none;
+}
+.input-container input:focus {
+    outline: none;
+}
+
+/* header text */
+.header-text {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 5rem;
+    text-align: center;
+}
+.header-text h1 {
+    font-size: 3rem;
+}
+.header-text p {
+    font-size: 1.5rem;
+}
+.header-text a {
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+/* products */
+#products {
+    margin-top: 0.2rem;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+#products a {
+    height: 220px;
+    
+}
+#products .product-1 {
+   background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5s.jpg) top center no-repeat;  
+   background-size: cover;
+}
+#products .product-2 {
+ background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5c.jpg) top center no-repeat;
+ background-size: cover;
+}
+#products .product-3 {
+ background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_30_years.jpg) top center no-repeat;
+ background-size: cover;
+}
+#products .product-4 {
+ background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_supplier_responsibility.jpg) top center no-repeat;
+ background-size: cover;
+}
+/* footer */
+#footer {
+    width: 100%;
+    max-width: 1000px;
+    font-size: 0.7rem;
+    margin: 1.2rem auto;
+    color: #666;
+}
+#footer a {
+    color: blue;
+}
+#footer .links, .secondary-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+#footer .links {
+   
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+#footer .secondary-links {
+   
+    justify-content: space-around;
+    list-style: none;
+}
+ 
+#footer .secondary-links a {
+    border-right: 1px solid lightslategrey;
+    padding: 0 0.1rem;
+    
+}
+#footer .secondary-links .rm-p {
+    border: 0;
+}
+@media (max-width: 900px) {
+    .main-nav {
+        width: 90%;
+        padding: 0.8rem 0;
+    }
+    .main-nav ul li {
+        display: none;
+    }
+    .main-nav .hamburger-menu {
+        display: block;
+    }
+    .main-nav ul {
+        
+        justify-content: space-around;
+    }
+    .main-nav .input-container {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+    #footer {
+        margin: 0 auto;
+    }
+}
+ 
+@media(max-width: 500px) {
+    #header .header-text h1 {
+        font-size: 1.4rem;
+    }
+    #header .header-text p {
+        font-size: 0.9rem;
+    }
+    #header .header-text a {
+        font-size: 0.9rem;
+    }
+    #footer {
+        font-size: 0.6rem;
+    }
+     
+}
