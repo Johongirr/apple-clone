@@ -7,3 +7,6 @@
 1. must use gradient in navigation
 2. must use background image 
 3. using semantic html elements to make website accessible
+
+
+Watch live version [here](https://johongirr.github.io/apple-clone/)
